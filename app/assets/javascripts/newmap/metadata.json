@@ -1,0 +1,12 @@
+{
+  "name": "newmap",
+  "version": "1.0.0",
+  "description": "",
+  "type": "overlay",
+  "format": "png",
+  "minzoom": "4",
+  "maxzoom": "8",
+  "bounds": "-25.00000000,62.99970771,-12.99925261,67.00000000",
+  "scale": "1",
+  "profile": "mercator"
+}
