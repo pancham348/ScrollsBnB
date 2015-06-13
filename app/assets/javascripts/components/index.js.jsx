@@ -19,15 +19,15 @@ var Index = React.createClass({
     return(
       <ul id="benchList">
       {this.state.benches.map(function(bench){
-          var photo = '';
+          var photo = 'assets/house.jpg';
         if (bench.photos && bench.photos.length > 0) {
           photo = bench.photos[0].url
         }
         return(
           <li key={bench.id} className="bench">
               <a href={"#property/" + bench.id}>
-                {bench.description}({bench.seats})
-                <img src={photo} />
+                {bench.description}({bench.rooms})
+                <img id="prop-photo" src={photo} />
               </a>
           </li>
         )

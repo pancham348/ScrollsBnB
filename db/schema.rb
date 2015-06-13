@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150607021754) do
+ActiveRecord::Schema.define(version: 20150611030640) do
 
   create_table "photos", force: :cascade do |t|
     t.string   "url",         null: false
@@ -30,5 +30,19 @@ ActiveRecord::Schema.define(version: 20150607021754) do
     t.datetime "updated_at",              null: false
     t.integer  "rooms",       default: 3
   end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username",        null: false
+    t.string   "password_digest", null: false
+    t.string   "first_name",      null: false
+    t.string   "last_name",       null: false
+    t.string   "location"
+    t.string   "session_token",   null: false
+    t.string   "img_src"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "users", ["username"], name: "index_users_on_username", unique: true
 
 end

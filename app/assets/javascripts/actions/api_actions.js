@@ -6,10 +6,10 @@ ApiActions = {
     });
   },
 
-  receiveBench: function(properties) {
+  receiveBench: function(property) {
     AppDispatcher.dispatch({
       actionType: BenchConstants.BENCH_RECEIVED,
-      properties: properties
+      property: property
     });
   }
 

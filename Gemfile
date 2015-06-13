@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
@@ -24,8 +23,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'react-rails','~> 1.0'
-
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 gem 'flux-rails-assets'
+gem 'bundler', '>= 1.8.4'
+gem 'browserify-rails', '~> 0.9.1'
+
+source "https://rails-assets.org" do
+  gem 'rails-assets-react-date-picker'
+  gem "rails-assets-moment"
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server

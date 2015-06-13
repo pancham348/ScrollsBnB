@@ -1,0 +1,26 @@
+{
+  "name": "ScrollsBnB",
+  "version": "1.0.0",
+  "description": "== README",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pancham348/ScrollsBnB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pancham348/ScrollsBnB/issues"
+  },
+  "homepage": "https://github.com/pancham348/ScrollsBnB",
+  "dependencies": {
+    "browserify": "^6.3.4",
+    "browserify-incremental": "^1.5.0"
+  }
+}

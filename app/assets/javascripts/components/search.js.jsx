@@ -3,9 +3,11 @@ var Search = React.createClass({
 
     return (
       <div id="search">
-        <BenchFilter />
         <Map />
-        <Index />
+				<div id="right">
+					<BenchFilter />
+	        <Index />
+				</div>
       </div>
     )
   }

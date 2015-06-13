@@ -8,9 +8,9 @@ var Map = React.createClass({
   },
   render: function(){
     return(
-      <div>
+
         <div ref="google-map" id="map" />
-      </div>
+
     )
   },
   addSingleMarker: function(bench){

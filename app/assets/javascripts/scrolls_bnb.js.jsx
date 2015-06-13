@@ -7,7 +7,6 @@ $(function() {
     render: function(){
       return (
         <div id="router">
-          <header><h1>BenchBnB</h1></header>
           <RouteHandler />
         </div>
       );

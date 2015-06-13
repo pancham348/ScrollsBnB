@@ -25,4 +25,12 @@ class Property < ActiveRecord::Base
     return @properties
   end
   
+  def profile_photo
+    if self.photos.empty?
+      return "assets/house.jpg"
+    else
+      return photos[0].url
+    end
+  end
+  
 end

@@ -9,7 +9,7 @@ class Api::PropertiesController < ApplicationController
 
   def create
     @property = Property.new(property_params)
-    @property.photos << Photo.new(photo_params)
+    #@property.photos << Photo.new(photo_params)
     if @property.save
       render json: @property
     else

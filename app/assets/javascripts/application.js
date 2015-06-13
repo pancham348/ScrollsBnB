@@ -12,14 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require react
 //= require react_ujs
 //= require ReactRouter.min
 //= require components
 //= require flux
 //= require eventemitter
+//= require "moment"
+//= require "react-date-picker"
 //= require_tree .
-
 
 window.GLOBAL_FILTER_PARAMS = {
   rooms: 3
